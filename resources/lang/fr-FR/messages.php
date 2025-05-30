@@ -3,4 +3,5 @@
 
 return [
     'welcome' => 'Bienvenue',
+    'apptitle' => 'Lab'
 ];

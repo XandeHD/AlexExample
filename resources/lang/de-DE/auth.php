@@ -1,6 +1,25 @@
-<?php 
-
+<?php
 
 return [
-    'welcome' => 'Bem-vindo',
+    'failed' => 'Diese Anmeldedaten stimmen nicht mit unseren Aufzeichnungen überein.',
+    'password' => 'Das Passwort ist falsch.',
+    'throttle' => 'Zu viele Loginversuche. Bitte versuche es in :seconds Sekunden erneut.',
+    'logout' => 'Erfolgreich abgemeldet.',
+    'login' => 'Anmelden',
+    'register' => 'Registrieren',
+    'email' => 'E-Mail',
+    'password'=>'Passwort',
+    'password_confirmation' => 'Passwort bestätigen',
+    'remember_me' => 'Angemeldet bleiben',
+    'forgot_password' => 'Passwort vergessen?',
+    'name' => 'Name',
+    'confirm_password' => 'Bestätige dein Passwort',
+    'already_registered' => 'Bereits registriert?',
+    'verify_email' => 'Bestätige deine E-Mail-Adresse',
+    'verify_email_sent' => 'Ein neuer Bestätigungslink wurde an deine E-Mail-Adresse gesendet.',
+    'verification_link_sent' => 'Bestätigungslink gesendet!',
+    'resend_verification' => 'Bestätigungs-E-Mail erneut senden',
+    'reset_password' => 'Passwort zurücksetzen',
+    'send_reset_link' => 'Link zum Zurücksetzen senden',
+    'new_password' => 'Neues Passwort',
 ];

@@ -1,6 +1,25 @@
-<?php 
-
+<?php
 
 return [
-    'welcome' => 'welcome',
+    'failed' => 'These credentials do not match our records.',
+    'password' => 'The password is incorrect.',
+    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
+    'logout' => 'Successfully logged out.',
+    'login' => 'Login',
+    'register' => 'Register',
+    'email' => 'Email',
+    'password_confirmation' => 'Confirm Password',
+    'remember_me' => 'Remember me',
+    'forgot_password' => 'Forgot your password?',
+    'name' => 'Name',
+    'password'=>'Password',
+    'confirm_password' => 'Confirm your password',
+    'already_registered' => 'Already registered?',
+    'verify_email' => 'Verify your email address',
+    'verify_email_sent' => 'A new verification link has been sent to your email address.',
+    'verification_link_sent' => 'Verification link sent!',
+    'resend_verification' => 'Resend verification email',
+    'reset_password' => 'Reset Password',
+    'send_reset_link' => 'Send Password Reset Link',
+    'new_password' => 'New Password',
 ];

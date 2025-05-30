@@ -15,9 +15,6 @@ class LanguageControl
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-
-    
-
     public function handle(Request $request, Closure $next): Response
     {
         $locale = Session::get('locale', config('app.locale'));

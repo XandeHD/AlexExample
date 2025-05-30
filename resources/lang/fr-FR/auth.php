@@ -1,6 +1,25 @@
-<?php 
-
+<?php
 
 return [
-    'welcome' => 'Bem-vindo',
+    'failed' => 'Ces identifiants ne correspondent pas à nos enregistrements.',
+    'password' => 'Le mot de passe est incorrect.',
+    'throttle' => 'Trop de tentatives de connexion. Veuillez réessayer dans :seconds secondes.',
+    'logout' => 'Déconnexion réussie.',
+    'login' => 'Se connecter',
+    'register' => 'S\'inscrire',
+    'email' => 'Email',
+    'password'=>'Mot de passe',
+    'password_confirmation' => 'Confirmer le mot de passe',
+    'remember_me' => 'Se souvenir de moi',
+    'forgot_password' => 'Mot de passe oublié ?',
+    'name' => 'Nom',
+    'confirm_password' => 'Confirmez votre mot de passe',
+    'already_registered' => 'Déjà inscrit ?',
+    'verify_email' => 'Vérifiez votre adresse e-mail',
+    'verify_email_sent' => 'Un nouveau lien de vérification a été envoyé à votre adresse e-mail.',
+    'verification_link_sent' => 'Lien de vérification envoyé !',
+    'resend_verification' => 'Renvoyer l\'email de vérification',
+    'reset_password' => 'Réinitialiser le mot de passe',
+    'send_reset_link' => 'Envoyer le lien de réinitialisation',
+    'new_password' => 'Nouveau mot de passe',
 ];
