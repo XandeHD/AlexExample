@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -19,6 +21,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // 
+        $cookieval = 'en-EN';
+        if(Session::get('locale') !== null){
+            $cookieval = Session::get('locale');
+        }
+        App::setLocale($cookieval);
     }
 }

@@ -22,8 +22,8 @@ class LanguageControl
         $availableLocales = config('app.languages');
 
         if (in_array($locale, $availableLocales)) {   
-                App::setLocale($locale);
-            }
+            App::setLocale($locale);
+        }
         return $next($request);
     }
 }

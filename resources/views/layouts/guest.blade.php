@@ -29,22 +29,4 @@
 
         </div>
     </body>
-    <script type='module'>
-        $('#langs').on('change', function () {
-            var selectedLocale = $(this).val();
-
-            $.ajax({
-                url: '/lang/'+selectedLocale,
-                type: 'GET',
-                data: {
-                    _token: '{{ csrf_token() }}'
-                },
-                success: function (response,statustxt) {
-                    if (statustxt === 'success') {
-                        location.reload(); // Page reload
-                    }
-                }
-            });
-        });
-    </script>
 </html>

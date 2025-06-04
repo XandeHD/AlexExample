@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Cookie;
 
 class LangController extends Controller
 {
@@ -19,7 +20,5 @@ class LangController extends Controller
 
         return redirect()->back();
     }
-
-
 
 }
