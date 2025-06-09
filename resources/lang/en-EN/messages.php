@@ -3,6 +3,7 @@
 return [
    'welcome' => 'welcome',
    'apptitle' => 'Laboratory',
+   'associate' => 'Associate',
 
    'admin-panel' => 'Admin Panel',
    'admin-users' => 'Users',

@@ -4,6 +4,7 @@
 return [
     'welcome' => 'Bienvenue',
     'apptitle' => 'Lab',
+    'associate' => 'Associé',
 
     'admin-panel' => 'Panneau d\'administration',
     'admin-users' => 'Utilisateurs',

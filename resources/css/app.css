@@ -6,3 +6,13 @@
 .lds-hourglass:after {
   border-color: rgb(26, 166, 247) transparent !important;
 }
+
+.wallpaper-login{
+  background-image: url('../../public/assets/images/wallpaper.png');
+  background-size: cover;
+}
+
+.wallpaper-op{
+  background-image: url('../../public/assets/images/wallpaper_op.png');
+  background-size: cover;
+}

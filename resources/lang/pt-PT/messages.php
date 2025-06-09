@@ -3,6 +3,9 @@
 return [
     'welcome' => 'Bem-vindo',
     'apptitle' => 'Laboratorio',
+    'associate' => 'Associado',
+
+
     'save'=>'Guardar',
     'new' => 'Nova',
     'add' => 'Adicionar',

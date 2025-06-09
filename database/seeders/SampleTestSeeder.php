@@ -3,10 +3,11 @@
 namespace Database\Seeders;
 
 use App\Models\Sample;
+use App\Models\SampleTests;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class SampleSeeder extends Seeder
+class SampleTestSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +15,6 @@ class SampleSeeder extends Seeder
     public function run(): void
     {
         //
-        Sample::factory()->count(1000)->create();
+        SampleTests::factory()->count(1000)->create();
     }
 }

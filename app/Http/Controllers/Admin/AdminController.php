@@ -102,7 +102,7 @@ class AdminController extends Controller
         });
         
 
-        return redirect()->route('admin-samples')->with('success', 'Registo criado com sucesso.');
+        return redirect()->route('admin.samples')->with('success', 'Registo criado com sucesso.');
 
     }
 

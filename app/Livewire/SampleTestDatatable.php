@@ -60,7 +60,7 @@ class SampleTestDatatable extends DataTableComponent
             //     ),
             LinkColumn::make('')
                 ->title(fn ($row) => view('components.icons.edit')->render())
-                ->location(fn ($row) => route('admin-sample-form',[$row['id']]))
+                ->location(fn ($row) => route('admin.sample-form',[$row['id']]))
                 ->html()
                 ->excludeFromColumnSelect(),
         ];

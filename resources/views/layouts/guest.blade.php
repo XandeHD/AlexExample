@@ -14,16 +14,25 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans text-gray-900 antialiased">
-
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
-            <div>
+    <body class="font-sans text-gray-900 antialiased wallpaper">
+        <div class="wallpaper-login min-h-screen flex flex-col sm:justify-center items-center pt-4 sm:pt-0 bg-gray-100 dark:bg-gray-900">
+            {{-- <div>
                 <a href="/">
-                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                    <x-application-logo class="w-50 h-40 fill-current text-gray-500" />
                 </a>
-            </div>
+            </div> --}}
 
-            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white dark:bg-gray-800 shadow-md overflow-hidden sm:rounded-lg">
+            <div class="w-full sm:max-w-md mt-2 px-6 py-4 bg-white dark:bg-gray-800 shadow-md overflow-hidden sm:rounded-lg outline outline-sky-500">
+                <div class="flex items-center justify-center">
+                    <a href="/">
+                        <x-application-logo class="w-50 h-40 fill-current text-gray-500" />
+                    </a>
+                    
+                    @if (request()->routeIs('admin.login') || request()->routeIs('admin.register'))
+                        <p class="subpixel-antialiased font-bold font-stretch-condensed text-2xl">{{ __('messages.associate') }}</p>
+                    @endif
+                </div>
+                
                 {{ $slot }}
             </div>
 

@@ -38,7 +38,7 @@
                         </div>
                     @endif
 
-                    <form method="POST" action="{{ route('admin-sample-form-save',[$routeid]) }}" class="space-y-6">
+                    <form method="POST" action="{{ route('admin.sample-form-save',[$routeid]) }}" class="space-y-6">
                         @csrf
 
                         <!-- Code -->
