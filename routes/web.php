@@ -13,10 +13,20 @@ Route::middleware(['lang'])->group(function(){
         return redirect()->route('login');
     });
 
+    // Caso a sessão fique presa...aconteceu de forma estupida...
+    Route::get('/force-logout', function () {
+        \Illuminate\Support\Facades\Auth::logout();
+        request()->session()->invalidate();
+        request()->session()->regenerateToken();
+        return redirect('/login');
+    });
+
     Route::get('/lang/{locale}',[LangController::class,'ChangeLang']);
 
+    Route::get('/waiting-aproval', fn () => view('waiting-aproval'))->name('waiting-aproval');
+
     // Client Normal Routes 
-    Route::middleware('auth:client')->group(function () {
+    Route::middleware(['auth:client','approved'])->group(function () {
         Route::get('/dashboard', fn () => view('dashboard'))->name('dashboard');
     });
 
@@ -29,6 +39,7 @@ Route::middleware(['lang'])->group(function(){
         Route::middleware(['auth:web', 'verified'])->group(function(){
             Route::get('/panel',[AdminController::class, 'Panel'])->name('panel');
             Route::get('/users',[AdminController::class, 'Users'])->name('users');
+             Route::get('/clients',[AdminController::class, 'Clients'])->name('clients');
 
             Route::prefix('/samples')->group(function(){
                 Route::get('/',[AdminController::class, 'Samples'])->name('samples');
@@ -38,11 +49,11 @@ Route::middleware(['lang'])->group(function(){
         });
     });
 
-    Route::middleware('auth')->group(function () {
-        Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-        Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-        Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-    });
+    // Route::middleware('auth')->group(function () {
+    //     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    //     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    //     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    // });
 
     // All Auth Routes
     require __DIR__.'/auth.php';

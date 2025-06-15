@@ -35,8 +35,9 @@ class ClientRegisterController extends Controller
 
         event(new Registered($client));
 
-        Auth::guard('client')->login($client);
+        return redirect()->route('waiting-aproval');
 
-        return redirect(route('admin.panel', absolute: false));
+        // Auth::guard('client')->login($client);
+        // return redirect(route('dashboard', absolute: false));
     }  
 }

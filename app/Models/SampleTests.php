@@ -10,12 +10,13 @@ class SampleTests extends Model
 {
     use HasFactory;
 
-    protected $table = 'sampletests';
+    protected $table = 'sample_tests';
 
     protected $primaryKey = 'id';
 
     protected $fillable = [
             'code',
+            'description',
             'cost',
             'status',
             'created_by',

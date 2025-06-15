@@ -11,14 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('sample_tests', function (Blueprint $table) {
-            $table->id();
+        Schema::create('sample_test_extra_vals', function (Blueprint $table) {
+            $table->id('fieldvalid');
+            $table->integer('fieldid');
             $table->integer('code');
-            $table->string('description')->default('');
-            $table->float('cost')->default(0);
-            $table->integer('status')->default(0);
-            $table->string('created_by')->default('default');
-            $table->string('updated_by')->default('');
+            $table->string('fieldvalue');
+            $table->string('created_by');
+            $table->string('updated_by');
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('sample_tests');
+        Schema::dropIfExists('sample_test_extra_vals');
     }
 };

@@ -12,10 +12,13 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    
-                    @if (Auth::guard() === 'web')
+                    {{-- {{ dd(Auth::guard()->name) }} --}}
+                    @if (Auth::guard()->name === 'web')
                          <x-nav-link :href="route('admin.panel')" :active="request()->routeIs('admin-panel')">
                             {{ __('messages.admin-panel') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('admin.clients')" :active="request()->routeIs('admin-clients')">
+                            {{ __('messages.admin-clients') }}
                         </x-nav-link>
                         <x-nav-link :href="route('admin.users')" :active="request()->routeIs('admin-users')">
                             {{ __('messages.admin-users') }}
@@ -63,21 +66,22 @@
                     </x-slot>
 
                     <x-slot name="content">
-                        <x-dropdown-link :href="route('profile.edit')">
+                        {{-- <x-dropdown-link :href="route('profile.edit')">
                             {{ __('Profile') }}
-                        </x-dropdown-link>
+                        </x-dropdown-link> --}}
 
                         <!-- Authentication -->
-                        <form method="POST" action="@if(Auth::guard('web')) {{ route('admin.logout') }} @else {{ route('logout') }} @endif">
+                        <form method="POST" action="@if(Auth::guard()->name === 'web') {{ route('admin.logout') }} @else {{ route('logout') }} @endif">
                             @csrf
                             @php
-                                if(Auth::guard() === 'web'){
+                                if(Auth::guard()->name === 'web'){
                                     $href = route('admin.logout');
                                 }else{
                                     $href =  route('logout');
-                                }  
+                                } 
+                               
                             @endphp 
-                            <x-dropdown-link :href={{ $href }} 
+                            <x-dropdown-link :href=$href 
                                     onclick="event.preventDefault();
                                                 this.closest('form').submit();">
                                 {{ __('Log Out') }}
@@ -115,15 +119,15 @@
             </div>
 
             <div class="mt-3 space-y-1">
-                <x-responsive-nav-link :href="route('profile.edit')">
+                {{-- <x-responsive-nav-link :href="route('profile.edit')">
                     {{ __('Profile') }}
-                </x-responsive-nav-link>
+                </x-responsive-nav-link> --}}
 
                 <!-- Authentication -->
-                <form method="POST" action="@if(Auth::guard('web')) {{ route('admin.logout') }} @else {{ route('logout') }} @endif">
+                <form method="POST" action="@if(Auth::guard()->name === 'web') {{ route('admin.logout') }} @else {{ route('logout') }} @endif">
                     @csrf
                     @php
-                        if(Auth::guard() === 'web'){
+                        if(Auth::guard()->name === 'web'){
                             $href = route('admin.logout');
                         }else{
                             $href =  route('logout');
@@ -132,7 +136,7 @@
                     <x-responsive-nav-link :href={{ $href }}
                             onclick="event.preventDefault();
                                         this.closest('form').submit();">
-                        {{ __('Log Out') }}
+                        {{ __('messages.logout') }}
                     </x-responsive-nav-link>
                 </form>
             </div>

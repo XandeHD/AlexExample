@@ -2,9 +2,11 @@
 
 namespace Database\Seeders;
 
+use App\Models\Client;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -21,5 +23,17 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call(SampleTestSeeder::class);
+
+        User::Create([
+            'name'=>'Alex Admin',
+            'email' => 'alexandre.ferrao@gestisoft.com',
+            'password' => Hash::make('12345678'),
+        ]);
+
+        Client::Create([
+            'name'=>'Alex Client',
+            'email' => 'alexferrao2000@gmail.com',
+            'password' => Hash::make('12345678'),
+        ]);
     }
 }

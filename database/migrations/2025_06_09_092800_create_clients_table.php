@@ -18,6 +18,11 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
+            $table->boolean('approved')->default(0);
+            $table->string('approved_by')->default('');
+            $table->datetime('approved_at')->nullable();
+            // $table->string('');
+            $table->boolean('status')->default(0);
             $table->timestamps();
         });
     }

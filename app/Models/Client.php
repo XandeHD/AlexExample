@@ -13,7 +13,6 @@ class Client extends Authenticatable
 
     protected $guard = 'client'; // <- útil para usares um guard específico
 
-
     protected $fillable = [
         'name',
         'email',
