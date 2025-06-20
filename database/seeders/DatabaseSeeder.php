@@ -22,18 +22,22 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        $this->call(SampleTestSeeder::class);
+        // $this->call(SampleTestSeeder::class);
 
-        User::Create([
-            'name'=>'Alex Admin',
-            'email' => 'alexandre.ferrao@gestisoft.com',
-            'password' => Hash::make('12345678'),
-        ]);
+        $this->call(ProductCategorySeeder::class);
 
-        Client::Create([
-            'name'=>'Alex Client',
-            'email' => 'alexferrao2000@gmail.com',
-            'password' => Hash::make('12345678'),
-        ]);
+        $this->call(ProductTypeSeeder::class);
+
+        // User::Create([
+        //     'name'=>'Alex Admin',
+        //     'email' => 'alexandre.ferrao@gestisoft.com',
+        //     'password' => Hash::make('12345678'),
+        // ]);
+
+        // Client::Create([
+        //     'name'=>'Alex Client',
+        //     'email' => 'alexferrao2000@gmail.com',
+        //     'password' => Hash::make('12345678'),
+        // ]);
     }
 }

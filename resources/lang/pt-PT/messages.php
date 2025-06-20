@@ -2,6 +2,7 @@
 
 return [
     'welcome' => 'Bem-vindo',
+    'dashboard' => 'Página Inicial',
     'apptitle' => 'Laboratorio',
     'associate' => 'Associado',
     'logout' => 'Terminar Sessão',
@@ -21,6 +22,10 @@ return [
     'admin-samples-test' => 'Testes de Amostras',
     'admin-sample-test-form' => 'Teste de Amostra ',
     'admin-sample-test-new' => 'Novo Teste de Amostra',
+
+    'analysis' => 'Analises',
+    'new_analysis' => 'Nova Analise',
+
 
     'label_extrafields' => 'Campos Extras:',
     'label_extra_name' => 'Nome',

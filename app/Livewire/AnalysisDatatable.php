@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Auth;
 use Rappasoft\LaravelLivewireTables\Views\Filters\SelectFilter;
 
-class ClientDatatable extends DataTableComponent
+class AnalysisDatatable extends DataTableComponent
 {
     protected $model = Client::class;
 

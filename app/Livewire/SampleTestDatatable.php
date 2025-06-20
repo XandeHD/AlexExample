@@ -38,8 +38,9 @@ class SampleTestDatatable extends DataTableComponent
             Column::make(__('messages.cost'), "cost")
                 ->sortable(),
             Column::make(__('messages.status'), "status")
-                ->sortable()
-                ->unclickable(),
+                ->label(fn ($row) => $this->renderStatusButton($row))
+                ->html()
+                ->sortable(),
             // Column::make(__('messages.created_by'), "created_by")
             //     ->sortable()
             //     ->collapseOnTablet(),
@@ -82,10 +83,25 @@ class SampleTestDatatable extends DataTableComponent
         ];
     }
 
+    public function toggleEstado($id)
+    {
+        $item = SampleTests::find($id);
+        if ($item) {
+            $item->status = !$item->status;
+            $item->save();
+        }
+    }
+
+    public function renderStatusButton($row): string
+    {
+        return view('components.toggle-status', compact('row'))->render();
+    }
+
+
     // Editar a query que é feita na base de dados
     public function builder(): Builder
     {
-        return SampleTests::with('descriptionByLocale')
+        return SampleTests::with('descriptionByLocale')->select('*')
             ->when($this->columnSearch['name'] ?? null, function ($query, $name) {
                 $locale = session('locale');
 

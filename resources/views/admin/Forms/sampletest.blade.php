@@ -79,9 +79,7 @@
 
                             @foreach(config('app.languages') as $lang)
                                 <div class="lang-content {{ $lang !== Session::get('locale') ? 'hidden' : '' }}" data-lang="{{ $lang }}">
-                                    <textarea name="descriptions[{{ $lang }}]" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="{{ __('messages.description_in').strtoupper($lang) }}">
-                                        {{ old("descriptions.$lang", trim($test_sample->descriptions[$lang]['description'] ?? '') ) }}
-                                    </textarea>
+                                    <textarea name="descriptions[{{ $lang }}]" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="{{ __('messages.description_in').strtoupper($lang) }}"> {{ old("descriptions.$lang", trim($test_sample->descriptions[$lang]['description'] ?? '') ) }} </textarea>
                                 </div>
                             @endforeach
                         </div>
@@ -89,11 +87,22 @@
 
                         <div>
                             {{-- Element to Copy --}}
+
+                            @php
+                                $fieldtypes = config('app.fieldtypes');
+                            @endphp
+
                             <div class="hidden">
                                 <div class="flex items-center gap-2 mb-2" id="extraCopy">
                                     <input type="text" code="extrafieldid" placeholder="{{ __('id') }}" class="hidden flex-1 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" >
                                     <input type="text" code="extrafieldname" placeholder="{{ __('messages.label_extra_name') }}" class="flex-1 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" >
-                                    <input type="text" code="extrafieldtype" placeholder="{{ __('messages.label_extra_type') }}" class="flex-1 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    {{-- <input type="text" code="extrafieldtype" placeholder="{{ __('messages.label_extra_type') }}" class="flex-1 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"> --}}
+                                    <select type="text" code="extrafieldtype" placeholder="{{ __('messages.label_extra_type') }}" class="flex-1 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                        @foreach ($fieldtypes as $type)
+                                            <option value="{{ $type }}">{{ $type }}</option>
+                                        @endforeach
+                                    </select>
+
                                     <button type="button" onclick="this.closest('div[id^=extrafieldid]').remove();" class="bg-red-500 hover:bg-red-600 text-white px-2 py-2 rounded-md"title="{{ __('messages.remove') }}">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                                             <path fill-rule="evenodd" d="M10 9l3.536-3.536a1 1 0 10-1.414-1.414L10 7.586 6.464 4.05A1 1 0 105.05 5.464L8.586 9l-3.536 3.536a1 1 0 101.414 1.414L10 10.414l3.536 3.536a1 1 0 001.414-1.414L11.414 9z" clip-rule="evenodd" />
@@ -121,7 +130,12 @@
                                                 <div class="flex items-center gap-2 mb-2" id="extrafieldid{{ $key }}">
                                                     <input type="text" name="extrafields[{{ $key }}][id]" value="{{ $extra['id'] }}" placeholder="{{ __('id') }}" class="hidden flex-1 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" >
                                                     <input type="text" name="extrafields[{{ $key }}][name]" value="{{ $extra['name'] }}" placeholder="{{ __('messages.label_extra_name') }}" class="flex-1 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" >
-                                                    <input type="text" name="extrafields[{{ $key }}][type]" value="{{ $extra['type'] }}" placeholder="{{ __('messages.label_extra_type') }}" class="flex-1 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" >
+                                                    {{-- <input type="text" name="extrafields[{{ $key }}][type]" value="{{ $extra['type'] }}" placeholder="{{ __('messages.label_extra_type') }}" class="flex-1 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" > --}}
+                                                    <select type="text" name="extrafields[{{ $key }}][type]" placeholder="{{ __('messages.label_extra_type') }}" class="flex-1 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                                        @foreach ($fieldtypes as $type)
+                                                            <option value="{{ $type }}"  {{ $extra['type'] === $type ? 'selected' : '' }} >{{ $type }}</option>
+                                                        @endforeach
+                                                    </select>
                                                     <button type="button" onclick="this.closest('div[id^=extrafieldid]').remove();" class="bg-red-500 hover:bg-red-600 text-white px-2 py-2 rounded-md"title="{{ __('messages.remove') }}">
                                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                                                             <path fill-rule="evenodd" d="M10 9l3.536-3.536a1 1 0 10-1.414-1.414L10 7.586 6.464 4.05A1 1 0 105.05 5.464L8.586 9l-3.536 3.536a1 1 0 101.414 1.414L10 10.414l3.536 3.536a1 1 0 001.414-1.414L11.414 9z" clip-rule="evenodd" />
@@ -134,7 +148,12 @@
                                             <div class="flex items-center gap-2 mb-2" id="extrafieldid{{ $key }}">
                                                 <input type="text" name="extrafields[{{ $key }}][id]" value="{{ $extra->fieldid }}" placeholder="{{ __('id') }}" class="hidden flex-1 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" >
                                                 <input type="text" name="extrafields[{{ $key }}][name]" value="{{ $extra->fieldname }}" placeholder="{{ __('messages.label_extra_name') }}" class="flex-1 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" >
-                                                <input type="text" name="extrafields[{{ $key }}][type]" value="{{ $extra->fieldtype }}" placeholder="{{ __('messages.label_extra_type') }}" class="flex-1 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" >
+                                                {{-- <input type="text" name="extrafields[{{ $key }}][type]" value="{{ $extra->fieldtype }}" placeholder="{{ __('messages.label_extra_type') }}" class="flex-1 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" > --}}
+                                                 <select type="text" name="extrafields[{{ $key }}][type]" placeholder="{{ __('messages.label_extra_type') }}" class="flex-1 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                                        @foreach ($fieldtypes as $type)
+                                                            <option value="{{ $type }}"  {{ $extra->fieldtype === $type ? 'selected' : '' }} >{{ $type }}</option>
+                                                        @endforeach
+                                                    </select>
                                                 <button type="button" onclick="this.closest('div[id^=extrafieldid]').remove();" class="bg-red-500 hover:bg-red-600 text-white px-2 py-2 rounded-md"title="{{ __('messages.remove') }}">
                                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                                                         <path fill-rule="evenodd" d="M10 9l3.536-3.536a1 1 0 10-1.414-1.414L10 7.586 6.464 4.05A1 1 0 105.05 5.464L8.586 9l-3.536 3.536a1 1 0 101.414 1.414L10 10.414l3.536 3.536a1 1 0 001.414-1.414L11.414 9z" clip-rule="evenodd" />

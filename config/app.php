@@ -123,6 +123,11 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
-    'languages'=> ['pt-PT', 'fr-FR', 'de-DE','en-EN']
+    'languages'=> ['pt-PT', 'fr-FR', 'de-DE','en-EN'],
+
+    'fieldtypes' => ['string','numeric','date','datetime'],
+
+    // Desenvolvimento Futuro
+    'fieldscale' => [''],
 
 ];

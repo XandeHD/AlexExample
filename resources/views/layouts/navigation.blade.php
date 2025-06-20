@@ -14,21 +14,24 @@
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     {{-- {{ dd(Auth::guard()->name) }} --}}
                     @if (Auth::guard()->name === 'web')
-                         <x-nav-link :href="route('admin.panel')" :active="request()->routeIs('admin-panel')">
+                         <x-nav-link :href="route('admin.panel')" :active="request()->routeIs('admin.panel')">
                             {{ __('messages.admin-panel') }}
                         </x-nav-link>
-                        <x-nav-link :href="route('admin.clients')" :active="request()->routeIs('admin-clients')">
+                        <x-nav-link :href="route('admin.clients')" :active="request()->routeIs('admin.clients')">
                             {{ __('messages.admin-clients') }}
                         </x-nav-link>
-                        <x-nav-link :href="route('admin.users')" :active="request()->routeIs('admin-users')">
+                        <x-nav-link :href="route('admin.users')" :active="request()->routeIs('admin.users') ">
                             {{ __('messages.admin-users') }}
                         </x-nav-link>
-                        <x-nav-link :href="route('admin.samples')" :active="request()->routeIs('admin-samples')">
+                        <x-nav-link :href="route('admin.samples')" :active="(request()->routeIs('admin.samples') || request()->routeIs('admin.sample-form'))">
                             {{ __('messages.admin-samples-test') }}
                         </x-nav-link>
                     @else
-                        <x-nav-link :href="route('dashboard')" :active="request()->routeIs('client.dashboard')">
-                            {{ __('Dashboard') }}
+                        <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                            {{ __('messages.dashboard') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('analysis')" :active="request()->routeIs('analysis')">
+                            {{ __('messages.analysis') }}
                         </x-nav-link>
                     @endif
 

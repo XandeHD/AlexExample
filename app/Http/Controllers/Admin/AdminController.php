@@ -54,7 +54,7 @@ class AdminController extends Controller
     public function SaveSampleTest(Request $request){
         $validdata = $request->validate([
             'code' => ['required','max:20','string'],
-            'description'=> ['required'],
+            // 'description'=> ['required'],
             'status' => ['required','boolean'],
             'cost' => ['required','numeric','min:0'],
             'descriptions' => ['required','array',''],
@@ -149,6 +149,6 @@ class AdminController extends Controller
 
     }
 
-
+    
 
 }

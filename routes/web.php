@@ -1,8 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminController;
-use App\Http\Controllers\Auth\ClientLoginController;
-use App\Http\Controllers\Auth\ClientRegisterController;
+use App\Http\Controllers\Client\AnalysisController;
 use App\Http\Controllers\LangController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Auth;
@@ -27,7 +26,11 @@ Route::middleware(['lang'])->group(function(){
 
     // Client Normal Routes 
     Route::middleware(['auth:client','approved'])->group(function () {
-        Route::get('/dashboard', fn () => view('dashboard'))->name('dashboard');
+        Route::get('/dashboard', fn () => view('client.dashboard'))->name('dashboard');
+
+        Route::get('/analysis',[AnalysisController::class,'Analysis'])->name('analysis');
+        Route::get('/analysis/form/{id}',[AnalysisController::class,'AnalysisForm'])->name('analysis.form');
+        Route::post('/analysis/form/{id}/save',[AnalysisController::class,'AnalysisSave'])->name('analysis.save');
     });
 
 
