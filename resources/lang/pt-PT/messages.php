@@ -7,13 +7,16 @@ return [
     'associate' => 'Associado',
     'logout' => 'Terminar Sessão',
 
+    'cancel' => 'Cancelar',
     'save'=>'Guardar',
     'new' => 'Novo/a',
     'add' => 'Adicionar',
     'add_new' => 'Adicionar Novo',
     'create'=>'Criar',
     'create_new'=>'Criar Novo',
-    
+    'choose' => 'Escolher',
+    'none' => 'Nenhum',
+    'modalProductWarningText' => 'Por favor indique corretamente uma categoria e um tipo',
 
     'admin-panel' => 'Painel Administrativo',
     'admin-users' => 'Utilizadores',
@@ -46,6 +49,29 @@ return [
     'approved' => 'Aprovado',
     'approved_by' => 'Aprovado por',
     'approved_at' => 'Aprovado em',
+
+    'product' => 'Produto',
+    'new_product' => 'Novo Produto',
+    'image' => 'Imagem',
+    'brand' => 'Marca',
+    'barcode' => 'Codigo de barras',
+    'color' => 'Cor',
+
+    'model' => 'Modelo',
+    'serial_number' => 'Numero de serie',
+    'width' => 'Comprimento',
+    'length' => 'Altura',
+    'material' => 'Material',
+    'category' => 'Category',
+    'type' => 'Tipo',   
+    'volume' => 'Volume',
+    'weigth' => 'Peso',
+    'density' => 'Densidade',
+    'storagetemp' => 'Temperatura de armazenamento',
+    'ph' => 'ph',
+    'concentration' => 'Concentração',
+    'concentrationUnit' => 'Unidade de Concentração',
+
 
     'description' => 'Descrição',
     'code' => 'Código',

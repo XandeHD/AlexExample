@@ -1,0 +1,1513 @@
+[
+    {
+        "category": "cosmetics",
+        "type": "liquid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "density",
+            "ph",
+            "storage_temp",
+            "concentration",
+            "concentration_unit",
+            "barcode"
+        ]
+    },
+    {
+        "category": "cosmetics",
+        "type": "solid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "color",
+            "material",
+            "barcode"
+        ]
+    },
+    {
+        "category": "cosmetics",
+        "type": "semi_solid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "ph",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "cosmetics",
+        "type": "gas",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "is_hazardous",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "cosmetics",
+        "type": "powder",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "material",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "cosmetics",
+        "type": "aerosol",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "is_hazardous",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "cosmetics",
+        "type": "capsule",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "material",
+            "batch",
+            "barcode"
+        ]
+    },
+    {
+        "category": "cosmetics",
+        "type": "tablet",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "material",
+            "batch",
+            "barcode"
+        ]
+    },
+    {
+        "category": "cosmetics",
+        "type": "suspension",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "concentration",
+            "concentration_unit",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "cosmetics",
+        "type": "emulsion",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "ph",
+            "concentration",
+            "barcode"
+        ]
+    },
+    {
+        "category": "cosmetics",
+        "type": "paste",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "cosmetics",
+        "type": "sample_kit",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "barcode"
+        ]
+    },
+    {
+        "category": "pharmaceuticals",
+        "type": "liquid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "density",
+            "ph",
+            "storage_temp",
+            "concentration",
+            "concentration_unit",
+            "barcode"
+        ]
+    },
+    {
+        "category": "pharmaceuticals",
+        "type": "solid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "color",
+            "material",
+            "barcode"
+        ]
+    },
+    {
+        "category": "pharmaceuticals",
+        "type": "semi_solid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "ph",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "pharmaceuticals",
+        "type": "gas",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "is_hazardous",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "pharmaceuticals",
+        "type": "powder",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "material",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "pharmaceuticals",
+        "type": "aerosol",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "is_hazardous",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "pharmaceuticals",
+        "type": "capsule",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "material",
+            "batch",
+            "barcode"
+        ]
+    },
+    {
+        "category": "pharmaceuticals",
+        "type": "tablet",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "material",
+            "batch",
+            "barcode"
+        ]
+    },
+    {
+        "category": "pharmaceuticals",
+        "type": "suspension",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "concentration",
+            "concentration_unit",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "pharmaceuticals",
+        "type": "emulsion",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "ph",
+            "concentration",
+            "barcode"
+        ]
+    },
+    {
+        "category": "pharmaceuticals",
+        "type": "paste",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "pharmaceuticals",
+        "type": "sample_kit",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "barcode",
+            "barcode"
+        ]
+    },
+    {
+        "category": "food",
+        "type": "liquid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "density",
+            "ph",
+            "storage_temp",
+            "concentration",
+            "concentration_unit",
+            "barcode"
+        ]
+    },
+    {
+        "category": "food",
+        "type": "solid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "color",
+            "material",
+            "barcode"
+        ]
+    },
+    {
+        "category": "food",
+        "type": "semi_solid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "ph",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "food",
+        "type": "gas",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "is_hazardous",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "food",
+        "type": "powder",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "material",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "food",
+        "type": "aerosol",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "is_hazardous",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "food",
+        "type": "capsule",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "material",
+            "batch",
+            "barcode"
+        ]
+    },
+    {
+        "category": "food",
+        "type": "tablet",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "material",
+            "batch",
+            "barcode"
+        ]
+    },
+    {
+        "category": "food",
+        "type": "suspension",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "concentration",
+            "concentration_unit",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "food",
+        "type": "emulsion",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "ph",
+            "concentration",
+            "barcode"
+        ]
+    },
+    {
+        "category": "food",
+        "type": "paste",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "food",
+        "type": "sample_kit",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "barcode",
+            "barcode"
+        ]
+    },
+    {
+        "category": "hygiene",
+        "type": "liquid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "density",
+            "ph",
+            "storage_temp",
+            "concentration",
+            "concentration_unit",
+            "barcode"
+        ]
+    },
+    {
+        "category": "hygiene",
+        "type": "solid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "color",
+            "material",
+            "barcode"
+        ]
+    },
+    {
+        "category": "hygiene",
+        "type": "semi_solid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "ph",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "hygiene",
+        "type": "gas",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "is_hazardous",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "hygiene",
+        "type": "powder",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "material",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "hygiene",
+        "type": "aerosol",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "is_hazardous",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "hygiene",
+        "type": "capsule",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "material",
+            "batch",
+            "barcode"
+        ]
+    },
+    {
+        "category": "hygiene",
+        "type": "tablet",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "material",
+            "batch",
+            "barcode"
+        ]
+    },
+    {
+        "category": "hygiene",
+        "type": "suspension",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "concentration",
+            "concentration_unit",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "hygiene",
+        "type": "emulsion",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "ph",
+            "concentration",
+            "barcode"
+        ]
+    },
+    {
+        "category": "hygiene",
+        "type": "paste",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "hygiene",
+        "type": "sample_kit",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "barcode",
+            "barcode"
+        ]
+    },
+    {
+        "category": "rawmaterials",
+        "type": "liquid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "density",
+            "ph",
+            "storage_temp",
+            "concentration",
+            "concentration_unit",
+            "barcode"
+        ]
+    },
+    {
+        "category": "rawmaterials",
+        "type": "solid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "color",
+            "material",
+            "barcode"
+        ]
+    },
+    {
+        "category": "rawmaterials",
+        "type": "semi_solid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "ph",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "rawmaterials",
+        "type": "gas",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "is_hazardous",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "rawmaterials",
+        "type": "powder",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "material",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "rawmaterials",
+        "type": "aerosol",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "is_hazardous",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "rawmaterials",
+        "type": "capsule",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "material",
+            "batch",
+            "barcode"
+        ]
+    },
+    {
+        "category": "rawmaterials",
+        "type": "tablet",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "material",
+            "batch",
+            "barcode"
+        ]
+    },
+    {
+        "category": "rawmaterials",
+        "type": "suspension",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "concentration",
+            "concentration_unit",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "rawmaterials",
+        "type": "emulsion",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "ph",
+            "concentration",
+            "barcode"
+        ]
+    },
+    {
+        "category": "rawmaterials",
+        "type": "paste",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "rawmaterials",
+        "type": "sample_kit",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "barcode",
+            "barcode"
+        ]
+    },
+    {
+        "category": "environmental",
+        "type": "liquid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "density",
+            "ph",
+            "storage_temp",
+            "concentration",
+            "concentration_unit",
+            "barcode"
+        ]
+    },
+    {
+        "category": "environmental",
+        "type": "solid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "color",
+            "material",
+            "barcode"
+        ]
+    },
+    {
+        "category": "environmental",
+        "type": "semi_solid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "ph",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "environmental",
+        "type": "gas",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "is_hazardous",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "environmental",
+        "type": "powder",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "material",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "environmental",
+        "type": "aerosol",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "is_hazardous",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "environmental",
+        "type": "capsule",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "material",
+            "batch",
+            "barcode"
+        ]
+    },
+    {
+        "category": "environmental",
+        "type": "tablet",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "material",
+            "batch",
+            "barcode"
+        ]
+    },
+    {
+        "category": "environmental",
+        "type": "suspension",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "concentration",
+            "concentration_unit",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "environmental",
+        "type": "emulsion",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "ph",
+            "concentration",
+            "barcode"
+        ]
+    },
+    {
+        "category": "environmental",
+        "type": "paste",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "environmental",
+        "type": "sample_kit",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "barcode",
+            "barcode"
+        ]
+    },
+    {
+        "category": "biotech",
+        "type": "liquid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "density",
+            "ph",
+            "storage_temp",
+            "concentration",
+            "concentration_unit",
+            "barcode"
+        ]
+    },
+    {
+        "category": "biotech",
+        "type": "solid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "color",
+            "material",
+            "barcode"
+        ]
+    },
+    {
+        "category": "biotech",
+        "type": "semi_solid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "ph",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "biotech",
+        "type": "gas",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "is_hazardous",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "biotech",
+        "type": "powder",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "material",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "biotech",
+        "type": "aerosol",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "is_hazardous",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "biotech",
+        "type": "capsule",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "material",
+            "batch",
+            "barcode"
+        ]
+    },
+    {
+        "category": "biotech",
+        "type": "tablet",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "material",
+            "batch",
+            "barcode"
+        ]
+    },
+    {
+        "category": "biotech",
+        "type": "suspension",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "concentration",
+            "concentration_unit",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "biotech",
+        "type": "emulsion",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "ph",
+            "concentration",
+            "barcode"
+        ]
+    },
+    {
+        "category": "biotech",
+        "type": "paste",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "biotech",
+        "type": "sample_kit",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "barcode",
+            "barcode"
+        ]
+    },
+    {
+        "category": "chemicals",
+        "type": "liquid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "density",
+            "ph",
+            "storage_temp",
+            "concentration",
+            "concentration_unit",
+            "barcode"
+        ]
+    },
+    {
+        "category": "chemicals",
+        "type": "solid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "color",
+            "material",
+            "barcode"
+        ]
+    },
+    {
+        "category": "chemicals",
+        "type": "semi_solid",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "ph",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "chemicals",
+        "type": "gas",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "is_hazardous",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "chemicals",
+        "type": "powder",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "material",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "chemicals",
+        "type": "aerosol",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "weight",
+            "is_hazardous",
+            "storage_temp",
+            "barcode"
+        ]
+    },
+    {
+        "category": "chemicals",
+        "type": "capsule",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "material",
+            "batch",
+            "barcode"
+        ]
+    },
+    {
+        "category": "chemicals",
+        "type": "tablet",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "material",
+            "batch",
+            "barcode"
+        ]
+    },
+    {
+        "category": "chemicals",
+        "type": "suspension",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "concentration",
+            "concentration_unit",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "chemicals",
+        "type": "emulsion",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "volume",
+            "ph",
+            "concentration",
+            "barcode"
+        ]
+    },
+    {
+        "category": "chemicals",
+        "type": "paste",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "density",
+            "ph",
+            "barcode"
+        ]
+    },
+    {
+        "category": "chemicals",
+        "type": "sample_kit",
+        "fields": [
+            "code",
+            "category",
+            "type",
+            "description",
+            "brand",
+            "weight",
+            "barcode",
+            "barcode"
+        ]
+    }
+]

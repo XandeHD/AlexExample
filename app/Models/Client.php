@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\Client as Authenticatable;
+use App\Auth\Client as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
 class Client extends Authenticatable

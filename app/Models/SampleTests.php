@@ -36,6 +36,10 @@ class SampleTests extends Model
 
         return $desc ?: $this->description;
     }
+
+    public function extras(){
+        return $this->hasMany(Sample_Test_Extra::class, 'code', 'code');
+    }
         
 }
 

@@ -7,10 +7,18 @@ import './bootstrap';
 // window.Alpine = Alpine;
 // Alpine.start();
 
+
+
 import jQuery from 'jquery'
 window.$ = jQuery;
+window.jQuery = jQuery;
 
 import '../../vendor/rappasoft/laravel-livewire-tables/resources/imports/laravel-livewire-tables-all.js';
+
+import 'select2';
+import 'select2/dist/css/select2.min.css';
+
+
 
 // Funções para correr codigo inteiro
 
@@ -30,4 +38,14 @@ $('#langs').on('change', function () {
         }
     });
 });
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     $('.select2').select2();
+// });
+
+// document.addEventListener("livewire:load", () => {
+//     Livewire.hook('message.processed', () => {
+//         $('.select2').select2();
+//     });
+// });
 
